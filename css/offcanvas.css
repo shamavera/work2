@@ -1,0 +1,93 @@
+
+        @media (max-width: 768px) {
+            .offcanvas-stop-scrolling {
+                height: 100%;
+                overflow: hidden
+            }
+
+            .navbar-default .navbar-offcanvas {
+                background:white;
+                border:solid #837880 1px;
+                padding:5px;                
+            }
+
+            .navbar-offcanvas {
+                position:absolute;
+                width: 100%;
+                left: -100%;
+                top: 160px;
+                padding-left: 15px;
+                padding-right: 15px;
+                z-index: 100;
+                overflow: scroll;
+                -webkit-overflow-scrolling: touch;
+                -webkit-transition: all 0.5s ease-in;
+                transition: all 0.5s ease-in
+            }
+            .navbar-offcanvas.navbar-offcanvas-fade {
+                opacity: 0
+            }
+
+            .navbar-offcanvas.navbar-offcanvas-fade.in {
+                opacity: 1
+            }
+
+            .navbar-offcanvas.offcanvas-transform.in {
+                -webkit-transform: translateX(100%);
+                -ms-transform: translateX(100%);
+                transform: translateX(100%)
+            }
+
+            .navbar-offcanvas.offcanvas-position.in {
+                left: 0;
+            }
+
+            .navbar-offcanvas.navbar-offcanvas-right {
+                left: auto;
+                right: -100%;
+            }
+
+            .navbar-offcanvas.navbar-offcanvas-right.offcanvas-transform.in {
+                -webkit-transform: translateX(-100%);
+                -ms-transform: translateX(-100%);
+                transform: translateX(-100%)
+            }
+
+            .navbar-offcanvas.navbar-offcanvas-right.offcanvas-position.in {
+                left: auto;
+                right: 0;
+            }
+
+        }
+
+        .offcanvas-toggle .icon-bar {
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out
+        }
+
+        .offcanvas-toggle.is-open .icon-bar:nth-child(1) {
+            -webkit-transform: rotate(45deg) translate(5px, 10px);
+            -ms-transform: rotate(45deg) translate(5px, 10px);
+            transform: rotate(45deg) translate(5px, 10px)
+        }
+
+        .offcanvas-toggle.is-open .icon-bar:nth-child(2) {
+            opacity: 0
+        }
+
+        .offcanvas-toggle.is-open .icon-bar:nth-child(3) {
+            -webkit-transform: rotate(-45deg) translate(5px, -10px);
+            -ms-transform: rotate(-45deg) translate(5px, -10px);
+            transform: rotate(-45deg) translate(5px, -10px)
+        }
+                
+
+
+
+
+
+
+
+
+
+
